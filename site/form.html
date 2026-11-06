@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookTop Forms</title>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="formulario">
+
+        <h2>BookTop Forms</h2>
+
+        <form id="meuFormulario">
+
+            <label for="titulo">Título do livro:</label><br>
+            <input type="text" id="titulo" placeholder="Título" required><br>
+
+            <label for="paragrafo">Autor:</label><br>
+            <input type="text" id="paragrafo" placeholder="Autor" required><br>
+
+            <label for="imagem">Caminho da imagem:</label><br>
+            <input type="text" id="imagem" placeholder="images/livro.jpg" required><br>
+
+            <label for="descricao">Descrição do livro:</label><br>
+            <input type="text" id="descricao" placeholder="Sinopse" required><br><br>
+
+            <input type="submit" value="Adicionar">
+
+        </form>
+
+    </div>
+
+    <div id="colecao"></div>
+
+    <script src="scriptform.js" defer></script>
+
+</body>
+</html>

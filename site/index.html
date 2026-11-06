@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BookTop - Catálogo de Livros</title>
+<link rel="stylesheet" href="style.css">
+<script> 
+    fetch("api/lista")
+    .then((data)=>data.json())
+    .then((json)=>console.log(json))
+    .catch((err)=>console.log(err));
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1 class="titulo-principal">
+        BookTop
+    </h1>
+    <p class="p-principal">
+        Descubra histórias e encontre sua próxima leitura.
+    </p>
+
+</header>
+
+
+<main>
+
+    <div class="todosCards">
+
+
+        <div class="card">
+
+            <div class="texto">
+                <h3>O Pequeno Príncipe</h3>
+                <p>Antoine de Saint-Exupéry</p>
+            </div>
+
+
+            <div class="img">
+                <img src="images/pequeno-principe.jpg"
+                    alt="Capa do livro O Pequeno Príncipe">
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="texto">
+                <h3>Harry Potter e a Pedra Filosofal</h3>
+                <p>J. K. Rowling</p>
+            </div>
+
+
+            <div class="img">
+                <img src="images/harry-potter.jpg"
+                    alt="Capa do livro Harry Potter e a Pedra Filosofal">
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="texto">
+                <h3>Orgulho e Preconceito</h3>
+
+                <p>Jane Austen</p>
+            </div>
+
+
+            <div class="img">
+                <img src="images/orgulho-preconceito.jpg"
+                    alt="Capa do livro Orgulho e Preconceito">
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script2.js"></script>
+
+</body>
+
+</html>
